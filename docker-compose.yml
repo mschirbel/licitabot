@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  sim-api:
+    image: sim-api:232139
+    build:
+      context: model
+    container_name: sim-api
+    ports:
+      - "8000:8000"
+    deploy:
+      resources:
+        limits:
+          cpus: '4'
+          memory: 8g
+    networks:
+      - licita-net
+
+  licitabot:
+    depends_on:
+      - sim-api
+    image: licitabot:232139
+    build:
+      context: app
+    container_name: app
+    networks:
+      - licita-net
+
+networks:
+  licita-net:
+    driver: bridge

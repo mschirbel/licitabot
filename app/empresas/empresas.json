@@ -1,0 +1,9 @@
+{
+  "nome_empresa": "Tech Soluções Ltda",
+  "cnpj": "12345678000199",
+  "qtd_funcionarios": 25,
+  "porte": "pequena",
+  "segmento_principal": "Tecnologia da Informação e Serviços de Automação",
+  "produtos_oferecidos": "Desenvolvimento de software, sistemas web, automação de processos e soluções em nuvem.",
+  "detalhes_produtos_servicos": "Oferecemos plataformas customizadas para gerenciamento de contratos, integração com APIs governamentais, serviços de deploy em nuvem, automação de tarefas repetitivas e dashboards personalizados para análise de dados."
+}
