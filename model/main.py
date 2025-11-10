@@ -5,7 +5,6 @@ import time
 import requests
 
 SIM_API_URL = "http://sim-api:8000/similarity"
-
 app = FastAPI()
 model = SentenceTransformer("sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
 
