@@ -14,7 +14,6 @@ class Texts(BaseModel):
 
 
 
-
 @app.post("/similarity")
 def compute_similarity(data: Texts):
     embeddings = model.encode([data.text1, data.text2])
