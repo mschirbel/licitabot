@@ -12,7 +12,9 @@ class Texts(BaseModel):
     text1: str
     text2: str
 
-    
+
+
+
 @app.post("/similarity")
 def compute_similarity(data: Texts):
     embeddings = model.encode([data.text1, data.text2])
